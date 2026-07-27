@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Logpro Projects | Logística e Procurement Industrial em Moçambique</title>
+<meta id="metaDescription" name="description" content="Engenharia e aprovisionamento industrial em Moçambique: instrumentação, válvulas e bombas, sistemas solares e segurança electrónica. Marcas internacionais, engenharia local, do fornecimento à manutenção.">
+<meta name="keywords" content="procurement industrial Moçambique, instrumentação, válvulas industriais, sistemas solares, segurança electrónica, Logpro Projects, Maputo, industrial procurement Mozambique">
+<meta name="author" content="Logpro Projects Lda">
+<meta name="theme-color" content="#16181C">
+
+<meta property="og:type" content="website">
+<meta id="metaOgTitle" property="og:title" content="Logpro Projects | Logística e Procurement Industrial">
+<meta id="metaOgDescription" property="og:description" content="Instrumentação, válvulas e bombas, energia solar e segurança electrónica — engenharia e aprovisionamento para os projectos industriais mais exigentes de Moçambique.">
+<meta id="metaOgLocale" property="og:locale" content="pt_MZ">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316181C'/%3E%3Cpolygon points='16,7 23,11 23,19 16,23 9,19 9,11' fill='none' stroke='%23A97C3D' stroke-width='1.4'/%3E%3Ctext x='16' y='19' text-anchor='middle' fill='%23A97C3D' font-family='Georgia,serif' font-size='9' font-weight='700'%3ELP%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Logpro Projects",
+  "legalName": "Logpro Projects Lda",
+  "url": "https://www.logpro.co.mz",
+  "email": "vendas@logpro.co.mz",
+  "telephone": "+258843002041",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Patrice Lumumba, Bairro Central nº 376",
+    "addressLocality": "Maputo",
+    "addressCountry": "MZ"
+  },
+  "sameAs": []
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:#16181C;
+  --ink-2:#1E2126;
+  --slate:#3A3F45;
+  --paper:#ECE8DE;
+  --paper-dim:#DDD8CB;
+  --card:#F5F2EA;
+  --brass:#A97C3D;
+  --brass-light:#C89A5C;
+  --bronze:#6B4A24;
+  --border:#C9C3B4;
+  --text-dark:#16181C;
+  --text-muted:#6B6B63;
+  --text-light:#F5F2EA;
+  --text-light-muted:#9C9A92;
+  --good:#2F7A4B;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+body{
+  font-family:'IBM Plex Sans', sans-serif;
+  background:var(--paper);
+  color:var(--text-dark);
+  line-height:1.6;
+}
+.disp{ font-family:'Fraunces', serif; }
+.mono{ font-family:'IBM Plex Mono', monospace; }
+a{ color:inherit; text-decoration:none; }
+img{ display:block; max-width:100%; }
+.container{ max-width:1120px; margin:0 auto; padding:0 32px; }
+ul{ list-style:none; }
+button{ font-family:inherit; }
+
+/* focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible{
+  outline:2px solid var(--brass); outline-offset:2px;
+}
+
+/* skip link */
+.skip-link{
+  position:absolute; left:-999px; top:0; background:var(--brass); color:var(--ink);
+  padding:10px 16px; z-index:200; font-size:13px; font-weight:600; border-radius:0 0 6px 0;
+}
+.skip-link:focus{ left:0; }
+
+/* ---------- HEADER ---------- */
+header{
+  background:var(--ink);
+  position:sticky; top:0; z-index:100;
+  border-bottom:1px solid var(--slate);
+}
+.nav-wrap{
+  max-width:1120px; margin:0 auto; padding:16px 32px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.logo{ display:flex; align-items:center; gap:8px; }
+.logo .lp{ color:var(--text-light); font-size:22px; font-weight:600; }
+.logo .name{ color:var(--brass); font-size:11px; letter-spacing:1.5px; }
+
+.nav-toggle{
+  display:none; background:transparent; border:1px solid var(--slate); border-radius:5px;
+  width:38px; height:34px; cursor:pointer; position:relative;
+}
+.nav-toggle span, .nav-toggle span::before, .nav-toggle span::after{
+  content:''; position:absolute; left:9px; right:9px; height:1.5px; background:var(--text-light); transition:.2s ease;
+}
+.nav-toggle span{ top:16px; }
+.nav-toggle span::before{ top:-6px; }
+.nav-toggle span::after{ top:6px; }
+.nav-toggle.open span{ background:transparent; }
+.nav-toggle.open span::before{ top:0; transform:rotate(45deg); background:var(--brass); }
+.nav-toggle.open span::after{ top:0; transform:rotate(-45deg); background:var(--brass); }
+
+nav ul{ display:flex; align-items:center; gap:28px; }
+nav a{ color:var(--text-light); font-size:13.5px; transition:opacity .15s ease; }
+nav a:hover{ opacity:.7; }
+nav a.active{ color:var(--brass); }
+
+.btn{
+  display:inline-block; border:none; cursor:pointer; border-radius:4px;
+  font-family:'IBM Plex Sans', sans-serif; font-weight:500; font-size:13px;
+  transition:opacity .15s ease, transform .1s ease;
+}
+.btn:hover{ opacity:.85; }
+.btn:active{ transform:scale(.98); }
+.btn-brass{ background:var(--brass); color:var(--ink); padding:10px 18px; }
+.btn-ghost{ background:transparent; color:var(--text-light); padding:10px 18px; border:1px solid var(--slate); }
+.btn-ghost:hover{ border-color:var(--brass); opacity:1; color:var(--brass); }
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;
+  background:linear-gradient(rgba(16,18,20,.87), rgba(16,18,20,.94)), url('https://commons.wikimedia.org/wiki/Special:FilePath/Fawley_Oil_Refinery.jpg?width=1400') center/cover no-repeat;
+  padding:80px 0 64px;
+}
+.hero-inner{ display:flex; align-items:center; gap:40px; flex-wrap:wrap; }
+.hero-text{ flex:1 1 420px; min-width:300px; }
+.eyebrow{ color:var(--brass); font-size:11.5px; letter-spacing:2px; margin-bottom:16px; }
+.hero h1{ color:var(--text-light); font-size:40px; font-weight:600; line-height:1.18; margin-bottom:18px; max-width:560px; }
+.hero p{ color:var(--text-light-muted); font-size:15px; max-width:440px; margin-bottom:28px; }
+.hero-actions{ display:flex; gap:12px; flex-wrap:wrap; }
+.hero-graphic{ flex:0 0 240px; display:flex; justify-content:center; }
+
+/* ---------- SECTORS ---------- */
+.sectors{ background:var(--paper-dim); padding:22px 0; }
+.sectors-row{ display:flex; justify-content:space-around; flex-wrap:wrap; gap:18px; }
+.sector-item{ display:flex; align-items:center; gap:9px; font-size:13.5px; color:var(--text-dark); }
+.sector-item svg{ flex-shrink:0; }
+
+/* ---------- STATS STRIP ---------- */
+.stats{ background:var(--ink-2); border-top:1px solid var(--slate); border-bottom:1px solid var(--slate); padding:26px 0; }
+.stats-row{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px; text-align:center; }
+.stat-item{ flex:1 1 150px; }
+.stat-item .num{ color:var(--brass); font-size:26px; font-weight:600; }
+.stat-item .label{ color:var(--text-light-muted); font-size:11.5px; letter-spacing:.5px; margin-top:4px; }
+
+/* ---------- SECTION HEADERS ---------- */
+.section{ padding:64px 0; }
+.section-dark{ background:var(--ink); }
+.section-eyebrow{ font-size:11px; letter-spacing:2px; margin-bottom:22px; color:var(--bronze); }
+.section-dark .section-eyebrow{ color:var(--brass); }
+.section-title{ font-size:26px; font-weight:600; margin-bottom:10px; }
+.section-dark .section-title{ color:var(--text-light); }
+.section-sub{ color:var(--text-muted); font-size:14px; margin-bottom:28px; max-width:560px; }
+.section-dark .section-sub{ color:var(--text-light-muted); }
+.center{ text-align:center; margin-left:auto; margin-right:auto; }
+
+/* ---------- MVV HEX CARDS ---------- */
+.mvv-row{ display:flex; gap:18px; flex-wrap:wrap; justify-content:center; }
+.mvv-card{
+  background:var(--ink-2); border:1px solid var(--slate); border-radius:12px;
+  padding:26px; width:220px; transition:transform .15s ease, border-color .15s ease;
+}
+.mvv-card:hover{ transform:translateY(-3px); border-color:var(--brass); }
+.mvv-card svg{ margin-bottom:12px; }
+.mvv-card h3{ color:var(--text-light); font-size:15px; font-weight:500; margin-bottom:8px; }
+.mvv-card p{ color:var(--text-light-muted); font-size:12.5px; line-height:1.65; }
+
+/* ---------- PROCESS ---------- */
+.process-row{ display:grid; grid-template-columns:repeat(4, 1fr); gap:20px; }
+.process-card{ background:var(--card); border:1px solid var(--border); border-radius:10px; padding:22px 20px; position:relative; }
+.process-num{ font-family:'Fraunces', serif; font-size:28px; color:var(--border); font-weight:600; margin-bottom:10px; }
+.process-card h4{ font-size:14.5px; font-weight:500; margin-bottom:6px; }
+.process-card p{ font-size:12.5px; color:var(--text-muted); }
+.process-card:not(:last-child)::after{
+  content:'→'; position:absolute; top:22px; right:-17px; color:var(--brass); font-size:16px; display:none;
+}
+@media (min-width:761px){ .process-card:not(:last-child)::after{ display:block; } }
+
+/* ---------- PRODUCT GRID ---------- */
+.chips{ display:flex; gap:10px; flex-wrap:wrap; padding:0 0 30px; }
+.chip{
+  cursor:pointer; font-size:12.5px; padding:8px 16px; border-radius:16px;
+  background:var(--card); border:1px solid var(--border); transition:background .15s ease, color .15s ease; user-select:none;
+}
+.chip.active{ background:var(--ink); color:var(--text-light); border-color:var(--ink); }
+.chip:hover{ background:var(--paper-dim); }
+
+.product-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px; }
+.pcard{
+  background:var(--card); border:1px solid var(--border); border-radius:10px; overflow:hidden;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.pcard:hover{ transform:translateY(-3px); box-shadow:0 10px 24px rgba(0,0,0,.08); }
+.pcard .pimg{ height:150px; width:100%; object-fit:cover; background:var(--paper-dim); }
+.pcard .pimg-placeholder{
+  height:150px; width:100%; background:var(--paper-dim); display:flex; align-items:center; justify-content:center;
+  flex-direction:column; gap:6px;
+}
+.pcard .pimg-placeholder span{ color:#8A8676; font-size:9.5px; }
+.pcard .pbody{ padding:16px; }
+.pcard .cat{ color:var(--brass); font-size:9.5px; letter-spacing:1.2px; margin-bottom:6px; }
+.pcard h4{ font-size:14px; font-weight:500; margin-bottom:4px; }
+.pcard .brand{ color:var(--text-muted); font-size:11.5px; margin-bottom:12px; }
+.pcard .cta-link{ color:var(--bronze); font-size:11.5px; font-weight:500; }
+.pcard .cta-link:hover{ opacity:.7; }
+.empty-state{ text-align:center; padding:40px 0; color:var(--text-muted); font-size:13.5px; display:none; }
+
+/* ---------- BRANDS ---------- */
+.brands{ background:var(--paper-dim); padding:40px 0; text-align:center; }
+.brands-row{ display:flex; justify-content:center; gap:34px; flex-wrap:wrap; margin-top:16px; }
+.brands-row span{ font-size:16px; font-weight:600; color:var(--text-dark); opacity:.75; transition:opacity .15s ease; }
+.brands-row span:hover{ opacity:1; }
+
+/* ---------- WHY US ---------- */
+.why-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:20px; }
+.why-card{ display:flex; gap:14px; }
+.why-icon{
+  flex-shrink:0; width:42px; height:42px; border-radius:10px; background:var(--paper-dim);
+  display:flex; align-items:center; justify-content:center;
+}
+.why-card h4{ font-size:14.5px; font-weight:500; margin-bottom:4px; }
+.why-card p{ font-size:12.5px; color:var(--text-muted); }
+
+/* ---------- AREAS DE ACTUAÇÃO ---------- */
+.areas-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:22px; }
+.areas-card{ background:var(--card); border:1px solid var(--border); border-radius:12px; padding:26px 24px; }
+.areas-card .areas-icon{
+  width:42px; height:42px; border-radius:10px; background:var(--paper-dim);
+  display:flex; align-items:center; justify-content:center; margin-bottom:14px;
+}
+.areas-card h3{ font-size:16px; font-weight:600; margin-bottom:14px; }
+.areas-card ul{ display:flex; flex-direction:column; gap:9px; }
+.areas-card li{ display:flex; align-items:flex-start; gap:9px; font-size:13px; color:var(--text-muted); line-height:1.5; }
+.areas-card li svg{ flex-shrink:0; margin-top:3px; }
+.areas-card li.sub{ padding-left:24px; color:var(--text-muted); }
+
+/* ---------- FAQ ---------- */
+.faq-list{ max-width:720px; }
+.faq-item{ border-bottom:1px solid var(--border); }
+.faq-item summary{
+  cursor:pointer; list-style:none; padding:18px 4px; font-size:14.5px; font-weight:500;
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+}
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary::after{
+  content:'+'; font-family:'Fraunces', serif; font-size:20px; color:var(--brass); flex-shrink:0; transition:transform .15s ease;
+}
+.faq-item[open] summary::after{ transform:rotate(45deg); }
+.faq-item p{ padding:0 4px 20px; color:var(--text-muted); font-size:13.5px; max-width:640px; }
+
+/* ---------- FOOTER ---------- */
+footer{ background:var(--ink); padding:48px 0 28px; }
+.footer-row{ display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:32px; }
+.footer-title{ color:var(--text-light); font-size:22px; font-weight:600; margin-bottom:14px; }
+.footer-line{ color:var(--text-light-muted); font-size:13px; line-height:1.9; display:flex; align-items:center; gap:8px; }
+.footer-line.mono{ color:var(--brass); }
+.footer-nav{ display:flex; gap:40px; flex-wrap:wrap; }
+.footer-col h5{ color:var(--text-light); font-size:12px; letter-spacing:1px; margin-bottom:14px; }
+.footer-col a{ display:block; color:var(--text-light-muted); font-size:13px; margin-bottom:10px; }
+.footer-col a:hover{ color:var(--brass); }
+.footer-bottom{
+  max-width:1120px; margin:36px auto 0; padding:20px 32px 0; border-top:1px solid var(--slate);
+  color:var(--text-light-muted); font-size:11.5px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+}
+
+/* ---------- PAGE HERO (inner sections) ---------- */
+.page-hero{ padding:56px 0 8px; }
+.page-hero h1{ font-size:28px; font-weight:600; margin-bottom:8px; }
+.page-hero p{ color:var(--text-muted); font-size:14px; max-width:520px; }
+
+/* ---------- FORM ---------- */
+.contact-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:28px; padding-bottom:20px; }
+.form-card{ background:var(--card); border:1px solid var(--border); border-radius:12px; padding:28px; }
+.field{ margin-bottom:16px; }
+.field label{ display:block; font-size:12px; color:var(--text-muted); margin-bottom:6px; }
+.field label .req{ color:var(--brass); }
+.field input, .field select, .field textarea{
+  width:100%; background:#fff; border:1px solid var(--border); border-radius:5px;
+  padding:11px 12px; font-size:13.5px; font-family:'IBM Plex Sans', sans-serif; color:var(--text-dark);
+}
+.field input:invalid:not(:placeholder-shown){ border-color:#B3492F; }
+.field-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.submit-btn{ width:100%; padding:13px; font-size:14px; }
+.form-success{
+  display:none; align-items:flex-start; gap:12px; background:#EAF3ED; border:1px solid var(--good);
+  border-radius:8px; padding:16px; margin-top:16px; font-size:13px; color:#1E4B30;
+}
+.form-success.show{ display:flex; }
+.form-note{ font-size:11.5px; color:var(--text-muted); margin-top:10px; }
+
+.contact-side{ display:flex; flex-direction:column; gap:14px; }
+.contact-card{ background:var(--ink); border-radius:12px; padding:22px; }
+.contact-card .row{ display:flex; align-items:flex-start; gap:12px; margin-bottom:16px; }
+.contact-card .row:last-child{ margin-bottom:0; }
+.contact-card .row span{ color:var(--text-light-muted); font-size:13px; line-height:1.6; }
+.contact-card .row span.mono{ color:var(--brass); }
+.whatsapp-btn{
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  background:#25D366; color:#0B3D1F; padding:14px; border-radius:8px; font-size:13.5px; font-weight:500;
+}
+.whatsapp-btn:hover{ opacity:.9; }
+.map-block{
+  background:var(--paper-dim); border-radius:12px; height:150px;
+  display:flex; align-items:center; justify-content:center; flex-direction:column; gap:6px;
+}
+.map-block span{ color:#8A8676; font-size:11px; }
+
+/* ---------- FLOATING ACTIONS ---------- */
+.float-wa{
+  position:fixed; right:22px; bottom:22px; z-index:150; width:54px; height:54px; border-radius:50%;
+  background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(0,0,0,.25);
+  transition:transform .15s ease;
+}
+.float-wa:hover{ transform:scale(1.06); }
+.back-to-top{
+  position:fixed; right:22px; bottom:84px; z-index:150; width:40px; height:40px; border-radius:50%;
+  background:var(--ink); color:var(--brass); border:1px solid var(--slate); display:flex; align-items:center; justify-content:center;
+  cursor:pointer; opacity:0; pointer-events:none; transition:opacity .2s ease, transform .15s ease;
+}
+.back-to-top.show{ opacity:1; pointer-events:auto; }
+.back-to-top:hover{ transform:translateY(-2px); }
+
+/* ---------- PROTOTYPE BADGE ---------- */
+.proto-banner{
+  background:var(--brass-light); color:var(--ink); font-size:12px; text-align:center; padding:8px 16px;
+}
+.proto-banner strong{ font-weight:600; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px){
+  .process-row{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width: 760px){
+  .nav-toggle{ display:block; }
+  nav{
+    position:absolute; top:100%; left:0; right:0; background:var(--ink); border-bottom:1px solid var(--slate);
+    max-height:0; overflow:hidden; transition:max-height .25s ease;
+  }
+  nav.open{ max-height:400px; }
+  nav ul{ flex-direction:column; align-items:flex-start; gap:0; padding:8px 0; }
+  nav ul li{ width:100%; }
+  nav ul li a{ display:block; padding:14px 32px; width:100%; }
+  nav ul li a.btn{ margin:10px 32px; width:calc(100% - 64px); text-align:center; }
+  .hero h1{ font-size:28px; }
+  .hero-graphic{ display:none; }
+  .stats-row{ justify-content:flex-start; }
+  .process-row{ grid-template-columns:1fr; }
+  .contact-grid{ grid-template-columns:1fr; }
+  .field-row{ grid-template-columns:1fr; }
+  .footer-row{ flex-direction:column; align-items:flex-start; }
+  .footer-nav{ gap:28px; }
+}
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *{ transition-duration:.001ms !important; animation-duration:.001ms !important; }
+}
+
+/* ---------- LANGUAGE SWITCHER ---------- */
+.lang-switch{
+  display:flex; align-items:center; gap:2px; background:var(--ink-2);
+  border:1px solid var(--slate); border-radius:5px; padding:2px; margin-left:8px;
+}
+.lang-btn{
+  background:transparent; border:none; cursor:pointer; color:var(--text-light-muted);
+  font-family:'IBM Plex Mono', monospace; font-size:11.5px; font-weight:500;
+  padding:6px 10px; border-radius:3px; letter-spacing:.5px; transition:.15s ease;
+}
+.lang-btn:hover{ color:var(--text-light); }
+.lang-btn.active{ background:var(--brass); color:var(--ink); }
+@media (max-width:900px){
+  .lang-switch{ order:-1; margin-left:0; margin-right:8px; }
+  .nav-wrap{ flex-wrap:wrap; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link" data-i18n="skipLink">Saltar para o conteúdo</a>
+
+<header>
+  <div class="nav-wrap">
+    <a href="#home" class="logo">
+      <span class="disp lp">LP</span>
+      <span class="mono name">LOGPRO&nbsp;PROJECTS</span>
+    </a>
+    <div class="lang-switch" role="group" aria-label="Selecionar idioma / Select language">
+      <button type="button" class="lang-btn" id="langPt" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" class="lang-btn" id="langEn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="nav-toggle" id="navToggle" data-i18n-aria-label="navToggleAria" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span>
+    </button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#sobre" data-nav data-i18n="navSobre">Sobre</a></li>
+        <li><a href="#areas" data-nav data-i18n="navAreas">Áreas de actuação</a></li>
+        <li><a href="#produtos" data-nav data-i18n="navProdutos">Produtos</a></li>
+        <li><a href="#processo" data-nav data-i18n="navServicos">Serviços</a></li>
+        <li><a href="#marcas" data-nav data-i18n="navMarcas">Marcas</a></li>
+        <li><a href="#qualidade" data-nav data-i18n="navQualidade">Qualidade &amp; HSE</a></li>
+        <li><a href="#contacto" class="btn btn-brass" data-nav data-i18n="navCotacao">Pedir cotação</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="mono eyebrow" data-i18n="heroEyebrow">LOGÍSTICA&nbsp;E&nbsp;PROCUREMENT&nbsp;INDUSTRIAL</div>
+      <h1 class="disp" data-i18n="heroTitle">Engenharia e aprovisionamento para os projectos industriais mais exigentes de Moçambique.</h1>
+      <p data-i18n="heroText">Instrumentação, energia solar, segurança electrónica e sistemas de controlo — com marcas internacionais e engenharia local, do fornecimento à manutenção.</p>
+      <div class="hero-actions">
+        <a href="#produtos" class="btn btn-brass" data-i18n="heroBtnProdutos">Ver produtos</a>
+        <a href="#contacto" class="btn btn-ghost" data-i18n="heroBtnEngenharia">Falar com engenharia</a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Marca Logpro em forma de hexágono">
+        <polygon points="110,55 155,80 155,130 110,155 65,130 65,80" fill="none" stroke="#A97C3D" stroke-width="1"/>
+        <text x="110" y="109" text-anchor="middle" fill="#A97C3D" font-family="Fraunces, serif" font-size="18" font-weight="600">LP</text>
+        <line x1="110" y1="55" x2="110" y2="14" stroke="#4A4E54" stroke-width="0.5"/>
+        <line x1="155" y1="80" x2="196" y2="58" stroke="#4A4E54" stroke-width="0.5"/>
+        <line x1="155" y1="130" x2="196" y2="152" stroke="#4A4E54" stroke-width="0.5"/>
+        <line x1="110" y1="155" x2="110" y2="196" stroke="#4A4E54" stroke-width="0.5"/>
+        <line x1="65" y1="130" x2="24" y2="152" stroke="#4A4E54" stroke-width="0.5"/>
+        <line x1="65" y1="80" x2="24" y2="58" stroke="#4A4E54" stroke-width="0.5"/>
+        <circle cx="110" cy="14" r="3" fill="#6B4A24"/>
+        <circle cx="196" cy="58" r="3" fill="#6B4A24"/>
+        <circle cx="196" cy="152" r="3" fill="#6B4A24"/>
+        <circle cx="110" cy="196" r="3" fill="#6B4A24"/>
+        <circle cx="24" cy="152" r="3" fill="#6B4A24"/>
+        <circle cx="24" cy="58" r="3" fill="#6B4A24"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="sectors">
+  <div class="container sectors-row">
+    <div class="sector-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="2"><path d="M12 2c2 4-2 5-2 8a4 4 0 0 0 8 0c0-2-1-3-1-5 3 2 4 5 4 8a8 8 0 0 1-16 0c0-5 4-7 7-11z"/></svg> <span data-i18n="sectorOilGas">Óleo e gás</span></div>
+    <div class="sector-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="2"><path d="M3 20l6-11 4 6 3-4 5 9H3z"/></svg> <span data-i18n="sectorMining">Mineração</span></div>
+    <div class="sector-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="2"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg> <span data-i18n="sectorEnergy">Energia</span></div>
+    <div class="sector-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="2"><rect x="3" y="10" width="6" height="11"/><rect x="10" y="6" width="6" height="15"/><rect x="17" y="3" width="4" height="18"/></svg> <span data-i18n="sectorConstruction">Construção industrial</span></div>
+  </div>
+</section>
+
+<section class="stats" data-i18n-aria-label="statsAria" aria-label="Números indicativos (protótipo)">
+  <div class="container stats-row">
+    <div class="stat-item"><div class="num mono">+40</div><div class="mono label" data-i18n="statBrands">MARCAS REPRESENTADAS</div></div>
+    <div class="stat-item"><div class="num mono">6</div><div class="mono label" data-i18n="statAreas">ÁREAS DE ENGENHARIA</div></div>
+    <div class="stat-item"><div class="num mono">4</div><div class="mono label" data-i18n="statSectors">SECTORES SERVIDOS</div></div>
+    <div class="stat-item"><div class="num mono">24/7</div><div class="mono label" data-i18n="statSupport">SUPORTE TÉCNICO</div></div>
+  </div>
+</section>
+
+<section class="section section-dark" id="sobre">
+  <div class="container">
+    <div class="mono section-eyebrow" data-i18n="aboutEyebrow">SOBRE&nbsp;NÓS</div>
+    <div class="mvv-row">
+      <div class="mvv-card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+        <h3 data-i18n="missionTitle">Missão</h3>
+        <p data-i18n="missionText">Oferta personalizada de produtos e serviços, reduzindo perdas e elevando a sustentabilidade dos nossos clientes.</p>
+      </div>
+      <div class="mvv-card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="1.6"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <h3 data-i18n="visionTitle">Visão</h3>
+        <p data-i18n="visionText">Excelência em engenharia e inovação, entregando uma experiência acima das expectativas do cliente.</p>
+      </div>
+      <div class="mvv-card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3 data-i18n="valuesTitle">Valores</h3>
+        <p data-i18n="valuesText">Integridade, honestidade, responsabilidade e centralidade no cliente em cada projecto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="areas">
+  <div class="container">
+    <div class="mono section-eyebrow" data-i18n="areasEyebrow">O&nbsp;QUE&nbsp;FAZEMOS</div>
+    <h2 class="disp section-title" data-i18n="areasTitle">Áreas de actuação</h2>
+    <p class="section-sub" data-i18n="areasSub">Duas frentes complementares: aprovisionamento contínuo e execução de projectos, adaptadas à dimensão e ao sector de cada cliente.</p>
+
+    <div class="areas-grid">
+      <div class="areas-card">
+        <div class="areas-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+        <h3 data-i18n="areasProcTitle">Procurement</h3>
+        <ul>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProc1">Aquisição de material industrial</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProc2">Fornecimento de equipamentos</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProc3">Logística e entregas</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProc4">Procurement hospitalar</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProc5">Procurement hoteleiro</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProc6">Procurement de pequena dimensão</span></li>
+        </ul>
+      </div>
+      <div class="areas-card">
+        <div class="areas-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><path d="M4 19V6a2 2 0 0 1 2-2h7l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M13 4v5h5M8 13h8M8 17h5"/></svg></div>
+        <h3 data-i18n="areasProjTitle">Projects</h3>
+        <ul>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProj1">Desenhadores</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProj2">Registo e autorizações</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProj3">Consultoria</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg> <span data-i18n="areasProj4">Prestação de serviços</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="processo">
+  <div class="container">
+    <div class="mono section-eyebrow" data-i18n="processEyebrow">COMO&nbsp;TRABALHAMOS</div>
+    <h2 class="disp section-title" data-i18n="processTitle">Do fornecimento à manutenção</h2>
+    <p class="section-sub" data-i18n="processSub">Um único parceiro para todo o ciclo de vida do equipamento — da especificação técnica ao suporte pós-venda.</p>
+    <div class="process-row">
+      <div class="process-card">
+        <div class="process-num">01</div>
+        <h4 data-i18n="process1Title">Diagnóstico e especificação</h4>
+        <p data-i18n="process1Text">Levantamento técnico da necessidade e recomendação da solução mais adequada ao processo do cliente.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">02</div>
+        <h4 data-i18n="process2Title">Aprovisionamento</h4>
+        <p data-i18n="process2Text">Importação e logística junto de marcas internacionais de referência, com garantia de origem.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">03</div>
+        <h4 data-i18n="process3Title">Instalação e comissionamento</h4>
+        <p data-i18n="process3Text">Montagem em obra, testes de aceitação e colocação em funcionamento com a equipa de engenharia.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">04</div>
+        <h4 data-i18n="process4Title">Suporte contínuo</h4>
+        <p data-i18n="process4Text">Manutenção preventiva, peças de reposição e assistência técnica ao longo da vida do equipamento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="produtos" style="padding-top:8px;">
+  <div class="container">
+    <div class="mono section-eyebrow" data-i18n="catalogEyebrow">CATÁLOGO</div>
+    <h2 class="disp section-title" data-i18n="catalogTitle">Produtos e soluções</h2>
+    <p class="section-sub" data-i18n="catalogSub">Equipamento industrial certificado, das marcas de referência mundial, com engenharia de aplicação local.</p>
+
+    <div class="chips" id="chips">
+      <span class="chip active" data-cat="todos" role="button" tabindex="0" data-i18n="chipAll">Todos</span>
+      <span class="chip" data-cat="instrumentacao" role="button" tabindex="0" data-i18n="chipInstrumentation">Instrumentação</span>
+      <span class="chip" data-cat="valvulas" role="button" tabindex="0" data-i18n="chipValves">Válvulas</span>
+      <span class="chip" data-cat="bombas" role="button" tabindex="0" data-i18n="chipPumps">Bombas</span>
+      <span class="chip" data-cat="solar" role="button" tabindex="0" data-i18n="chipSolar">Solar</span>
+      <span class="chip" data-cat="seguranca" role="button" tabindex="0" data-i18n="chipSecurity">Segurança</span>
+      <span class="chip" data-cat="comunicacao" role="button" tabindex="0" data-i18n="chipCommunication">Comunicação</span>
+      <span class="chip" data-cat="mineracao" role="button" tabindex="0" data-i18n="chipMining">Mineração</span>
+    </div>
+
+    <div class="product-grid" id="grid">
+
+      <div class="pcard" data-cat="instrumentacao">
+        <img class="pimg" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Regulator_valve_%26_pressure_gauge.JPG?width=500" alt="Regulador e manómetro de pressão industrial" data-i18n-alt="p1Alt">
+        <div class="pbody">
+          <div class="mono cat" data-i18n="catInstrumentacao">INSTRUMENTAÇÃO</div>
+          <h4 data-i18n="p1Title">Transmissor de pressão</h4>
+          <div class="brand">Rosemount · Emerson</div>
+          <a href="#contacto" class="cta-link" data-i18n="ctaLink">Pedir cotação →</a>
+        </div>
+      </div>
+
+      <div class="pcard" data-cat="valvulas">
+        <img class="pimg" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Pressure_seal_gate_valve.JPG?width=500" alt="Válvula gate industrial de vedação por pressão" data-i18n-alt="p2Alt">
+        <div class="pbody">
+          <div class="mono cat" data-i18n="catValvulas">VÁLVULAS</div>
+          <h4 data-i18n="p2Title">Gate valve industrial</h4>
+          <div class="brand" data-i18n="p2Brand">Vedação por pressão · Aço</div>
+          <a href="#contacto" class="cta-link" data-i18n="ctaLink">Pedir cotação →</a>
+        </div>
+      </div>
+
+      <div class="pcard" data-cat="bombas">
+        <div class="pimg-placeholder">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A5A08F" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+          <span class="mono" data-i18n="photoSoon">foto real do produto brevemente</span>
+        </div>
+        <div class="pbody">
+          <div class="mono cat" data-i18n="catBombas">BOMBAS</div>
+          <h4 data-i18n="p3Title">Bomba centrífuga</h4>
+          <div class="brand" data-i18n="p3Brand">Motor trifásico</div>
+          <a href="#contacto" class="cta-link" data-i18n="ctaLink">Pedir cotação →</a>
+        </div>
+      </div>
+
+      <div class="pcard" data-cat="solar">
+        <img class="pimg" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Commercial_Solar_PV.jpg?width=500" alt="Instalação comercial de painéis solares fotovoltaicos" data-i18n-alt="p4Alt">
+        <div class="pbody">
+          <div class="mono cat" data-i18n="catSolar">SOLAR</div>
+          <h4 data-i18n="p4Title">Sistema fotovoltaico</h4>
+          <div class="brand" data-i18n="p4Brand">Painéis + MPPT + inversor</div>
+          <a href="#contacto" class="cta-link" data-i18n="ctaLink">Pedir cotação →</a>
+        </div>
+      </div>
+
+      <div class="pcard" data-cat="solar">
+        <img class="pimg" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Roof_top_installation_2.jpg?width=500" alt="Instalação de painéis solares em telhado" data-i18n-alt="p5Alt">
+        <div class="pbody">
+          <div class="mono cat" data-i18n="catSolar">SOLAR</div>
+          <h4 data-i18n="p5Title">Controlador MPPT</h4>
+          <div class="brand">100V · 20A</div>
+          <a href="#contacto" class="cta-link" data-i18n="ctaLink">Pedir cotação →</a>
+        </div>
+      </div>
+
+      <div class="pcard" data-cat="seguranca">
+        <img class="pimg" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Surveillance_cameras-IMG_4377.JPG?width=500" alt="Câmaras de videovigilância industrial CCTV" data-i18n-alt="p6Alt">
+        <div class="pbody">
+          <div class="mono cat" data-i18n="catSeguranca">SEGURANÇA</div>
+          <h4 data-i18n="p6Title">Sistema CCTV</h4>
+          <div class="brand" data-i18n="p6Brand">Monitorização de processo</div>
+          <a href="#contacto" class="cta-link" data-i18n="ctaLink">Pedir cotação →</a>
+        </div>
+      </div>
+
+      <div class="pcard" data-cat="seguranca">
+        <div class="pimg-placeholder">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A5A08F" stroke-width="1.6"><path d="M12 2 3 6v6c0 5 3.5 8 9 10 5.5-2 9-5 9-10V6l-9-4z"/><path d="M12 8v5M12 16.5v.1"/></svg>
+          <span class="mono" data-i18n="photoSoon">foto real do produto brevemente</span>
+        </div>
+        <div class="pbody">
+          <div class="mono cat" data-i18n="catSeguranca">SEGURANÇA</div>
+          <h4 data-i18n="p7Title">Detector de gás</h4>
+          <div class="brand">Honeywell</div>
+          <a href="#contacto" class="cta-link" data-i18n="ctaLink">Pedir cotação →</a>
+        </div>
+      </div>
+
+      <div class="pcard" data-cat="comunicacao">
+        <div class="pimg-placeholder">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A5A08F" stroke-width="1.6"><rect x="3" y="8" width="18" height="8" rx="1.5"/><path d="M7 12h.01M11 12h.01M15 12h.01"/></svg>
+          <span class="mono" data-i18n="photoSoon">foto real do produto brevemente</span>
+        </div>
+        <div class="pbody">
+          <div class="mono cat" data-i18n="catComunicacao">COMUNICAÇÃO</div>
+          <h4 data-i18n="p8Title">Switch industrial</h4>
+          <div class="brand" data-i18n="p8Brand">Hirschmann · 8 portas</div>
+          <a href="#contacto" class="cta-link" data-i18n="ctaLink">Pedir cotação →</a>
+        </div>
+      </div>
+
+      <div class="pcard" data-cat="mineracao">
+        <img class="pimg" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Giant_Mining_Truck.jpg?width=500" alt="Camião industrial de mineração de grande porte" data-i18n-alt="p9Alt">
+        <div class="pbody">
+          <div class="mono cat" data-i18n="catMineracao">MINERAÇÃO</div>
+          <h4 data-i18n="p9Title">Equipamento e comunicação para mina</h4>
+          <div class="brand" data-i18n="p9Brand">Rádios · Sensores · Automação</div>
+          <a href="#contacto" class="cta-link" data-i18n="ctaLink">Pedir cotação →</a>
+        </div>
+      </div>
+
+    </div>
+    <p class="empty-state" id="emptyState" data-i18n="emptyState">Sem produtos nesta categoria de momento — contacte-nos, a nossa rede de fornecedores é mais ampla do que este catálogo.</p>
+  </div>
+</section>
+
+<section class="brands" id="marcas">
+  <div class="container">
+    <div class="mono section-eyebrow center" style="color:var(--bronze);" data-i18n="brandsEyebrow">MARCAS&nbsp;REPRESENTADAS</div>
+    <div class="brands-row disp">
+      <span>Rosemount</span><span>ABB</span><span>Siemens</span><span>Yokogawa</span><span>Festo</span><span>WEG</span><span>Honeywell</span><span>Hirschmann</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="mono section-eyebrow" data-i18n="whyEyebrow">PORQUÊ&nbsp;A&nbsp;LOGPRO</div>
+    <h2 class="disp section-title" data-i18n="whyTitle">Um parceiro técnico, não apenas um fornecedor</h2>
+    <p class="section-sub" data-i18n="whySub">A diferença está na engenharia de aplicação: ajudamos a escolher, instalar e manter o equipamento certo.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><path d="M12 2 3 6v6c0 5 3.5 8 9 10 5.5-2 9-5 9-10V6l-9-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div><h4 data-i18n="why1Title">Marcas com garantia de origem</h4><p data-i18n="why1Text">Representação directa e canais autorizados, sem intermediários que comprometam a garantia.</p></div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <div><h4 data-i18n="why2Title">Resposta técnica rápida</h4><p data-i18n="why2Text">Equipa de engenharia disponível para especificação, dúvidas técnicas e emergências de operação.</p></div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><path d="M3 20l6-11 4 6 3-4 5 9H3z"/></svg></div>
+        <div><h4 data-i18n="why3Title">Cobertura sectorial ampla</h4><p data-i18n="why3Text">Óleo e gás, mineração, energia e construção industrial — cada sector com as suas exigências próprias.</p></div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><rect x="3" y="10" width="6" height="11"/><rect x="10" y="6" width="6" height="15"/><rect x="17" y="3" width="4" height="18"/></svg></div>
+        <div><h4 data-i18n="why4Title">Acompanhamento pós-venda</h4><p data-i18n="why4Text">Manutenção preventiva e peças de reposição para maximizar o tempo de operação do equipamento.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="qualidade">
+  <div class="container">
+    <div class="mono section-eyebrow" data-i18n="qualityEyebrow">QUALIDADE&nbsp;&amp;&nbsp;HSE</div>
+    <h2 class="disp section-title" data-i18n="qualityTitle">Qualidade, HSE &amp; Conformidade</h2>
+    <p class="section-sub" style="max-width:720px;" data-i18n="qualityIntro">A LogPro está plenamente comprometida com os mais elevados padrões de Qualidade, Saúde, Segurança e Ambiente (HSE) e Conformidade em todas as actividades. Reconhecemos que o fornecimento responsável e a prestação de serviços exigem cumprimento rigoroso das melhores práticas internacionais, requisitos legais e princípios éticos de negócio. A nossa abordagem garante rastreabilidade e melhoria contínua em toda a cadeia de abastecimento.</p>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><path d="M12 2 3 6v6c0 5 3.5 8 9 10 5.5-2 9-5 9-10V6l-9-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div><h4 data-i18n="quality1Title">Qualidade</h4><p data-i18n="quality1Text">Todos os produtos cumprem especificações técnicas definidas e padrões da indústria.</p></div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12h6M12 9v6"/></svg></div>
+        <div><h4 data-i18n="quality2Title">Saúde &amp; Segurança</h4><p data-i18n="quality2Text">Prioridade máxima em cada projecto, desde o manuseamento até à entrega final.</p></div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><path d="M20 4C10 4 4 10 4 18c0 1 1 2 2 2 8 0 14-6 14-16 0 0 0 0 0 0z"/><path d="M6 20c0-6 3-10 8-13"/></svg></div>
+        <div><h4 data-i18n="quality3Title">Ambiente</h4><p data-i18n="quality3Text">Responsabilidade ambiental integrada em todos os nossos processos operacionais.</p></div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B4A24" stroke-width="1.8"><path d="M12 3v18M7 6h10M4 10l3-4 3 4M17 10l3-4 3 4"/><path d="M4 10a3 3 0 0 0 6 0M14 10a3 3 0 0 0 6 0"/></svg></div>
+        <div><h4 data-i18n="quality4Title">Conformidade</h4><p data-i18n="quality4Text">Transparência total, cumprindo regulamentos locais e requisitos de comércio internacional.</p></div>
+      </div>
+    </div>
+
+    <div class="form-card" style="margin-top:36px;">
+      <div class="mono" style="color:var(--bronze); font-size:11px; letter-spacing:1.5px; margin-bottom:10px;" data-i18n="overviewEyebrow">VISÃO&nbsp;GERAL&nbsp;—&nbsp;EXPERTISE&nbsp;EM&nbsp;PROCUREMENT</div>
+      <p style="font-size:13.5px; color:var(--text-muted); max-width:800px;" data-i18n="overviewText">A LogPro Projects Lda é uma empresa de soluções de procurement e cadeia de abastecimento comprometida com serviços estratégicos, fiáveis e eficientes em termos de custo. Com foco na eficiência operacional e transparência, apoiamos organizações na aquisição dos produtos e serviços certos, no momento certo, pelo melhor valor. A nossa expertise abrange gestão de fornecedores, coordenação logística, negociação de contratos e processos de procurement de ponta a ponta.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="mono section-eyebrow" data-i18n="faqEyebrow">PERGUNTAS&nbsp;FREQUENTES</div>
+    <h2 class="disp section-title" data-i18n="faqTitle">Dúvidas comuns</h2>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary style="color:var(--text-light);" data-i18n="faq1Q">Que sectores a Logpro Projects atende?</summary>
+        <p data-i18n="faq1A">Trabalhamos principalmente com óleo e gás, mineração, energia e construção industrial, adaptando cada proposta às normas e exigências do sector do cliente.</p>
+      </details>
+      <details class="faq-item">
+        <summary style="color:var(--text-light);" data-i18n="faq2Q">Como funciona o processo de cotação?</summary>
+        <p data-i18n="faq2A">Após o pedido através do formulário ou WhatsApp, a equipa de engenharia analisa a especificação e envia uma proposta técnica e comercial, normalmente em 1 a 3 dias úteis.</p>
+      </details>
+      <details class="faq-item">
+        <summary style="color:var(--text-light);" data-i18n="faq3Q">Fazem instalação e manutenção, ou apenas fornecimento?</summary>
+        <p data-i18n="faq3A">Cobrimos todo o ciclo: diagnóstico, aprovisionamento, instalação, comissionamento e suporte técnico contínuo após a entrega.</p>
+      </details>
+      <details class="faq-item">
+        <summary style="color:var(--text-light);" data-i18n="faq4Q">Trabalham com equipamento fora do catálogo apresentado?</summary>
+        <p data-i18n="faq4A">Sim. O catálogo mostra uma amostra representativa — a nossa rede de marcas e fornecedores é mais ampla; entre em contacto com a especificação do seu projecto.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contacto" style="padding-bottom:0;">
+  <div class="container">
+    <div class="mono section-eyebrow" data-i18n="contactEyebrow">CONTACTO</div>
+    <h2 class="disp section-title" data-i18n="contactTitle">Solicite uma cotação</h2>
+    <p class="section-sub" data-i18n="contactSub">A nossa equipa de engenharia responde com especificação técnica e proposta comercial.</p>
+
+    <div class="contact-grid">
+
+      <form class="form-card" id="quote-form" action="https://formspree.io/f/xdarqeba" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Novo pedido de cotação — Logpro Projects">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="field">
+          <label for="nome"><span data-i18n="labelName">Nome completo</span> <span class="req">*</span></label>
+          <input id="nome" name="nome" type="text" placeholder="Nome e apelido" data-i18n-placeholder="phName" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="empresa" data-i18n="labelCompany">Empresa</label>
+            <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa" data-i18n-placeholder="phCompany">
+          </div>
+          <div class="field">
+            <label for="sector" data-i18n="labelSector">Sector</label>
+            <select id="sector" name="sector">
+              <option data-i18n="sectorOilGas">Óleo e gás</option>
+              <option data-i18n="sectorMining">Mineração</option>
+              <option data-i18n="sectorEnergy">Energia</option>
+              <option data-i18n="sectorConstruction">Construção industrial</option>
+              <option data-i18n="sectorOther">Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="email"><span data-i18n="labelEmail">E-mail</span> <span class="req">*</span></label>
+            <input id="email" name="email" type="email" placeholder="nome@empresa.co.mz" required>
+          </div>
+          <div class="field">
+            <label for="telefone" data-i18n="labelPhone">Telefone / WhatsApp</label>
+            <input id="telefone" name="telefone" type="tel" placeholder="+258 8xx xxx xxx">
+          </div>
+        </div>
+        <div class="field">
+          <label for="interesse" data-i18n="labelInterest">Produto ou serviço de interesse</label>
+          <select id="interesse" name="interesse">
+            <option data-i18n="intInstrumentation">Instrumentação</option>
+            <option data-i18n="intValvesPumps">Válvulas e bombas</option>
+            <option data-i18n="intSolar">Sistemas solares</option>
+            <option data-i18n="intSecurity">Segurança electrónica</option>
+            <option data-i18n="intCommunication">Comunicação industrial</option>
+            <option data-i18n="intEngineering">Engenharia e aprovisionamento</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensagem" data-i18n="labelMessage">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva o equipamento ou projecto" data-i18n-placeholder="phMessage"></textarea>
+        </div>
+        <button type="submit" class="btn btn-brass submit-btn" id="submitBtn" data-i18n="submitBtn">Enviar pedido</button>
+
+        <div class="form-success" id="formSuccess" role="status">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7A4B" stroke-width="2" style="flex-shrink:0;"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          <span data-i18n="formSuccessMsg">Pedido validado. Em breve a nossa equipa de engenharia entrará em contacto.</span>
+        </div>
+        <div class="form-error" id="formError" role="alert" style="display:none; align-items:center; gap:8px; margin-top:14px; padding:12px 14px; border-radius:5px; background:rgba(200,60,50,.12); border:1px solid #C83C32; color:#8C2A22; font-size:13px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C83C32" stroke-width="2" style="flex-shrink:0;"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.1"/></svg>
+          <span data-i18n="formErrorMsg">Não foi possível enviar o pedido. Tente novamente ou contacte-nos por WhatsApp.</span>
+        </div>
+        <p class="form-note" id="formSetupNote" data-i18n="formSetupNote">
+          Configuração pendente: substitua "YOUR_FORM_ID" no atributo action do formulário pelo ID do seu formulário Formspree para activar o envio real de e-mails.
+        </p>
+      </form>
+
+      <div class="contact-side">
+        <div class="contact-card">
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2" style="margin-top:2px; flex-shrink:0;"><path d="M12 22s8-7.2 8-13a8 8 0 1 0-16 0c0 5.8 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <span>Av. Patrice Lumumba, Bairro Central nº 376, Maputo</span>
+          </div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2" style="margin-top:2px; flex-shrink:0;"><path d="M12 22s8-7.2 8-13a8 8 0 1 0-16 0c0 5.8 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <span><span class="mono" data-i18n="branchLabel" style="color:var(--bronze);">Sucursal:</span> Vilankulo — Business Center</span>
+          </div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2" style="margin-top:2px; flex-shrink:0;"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+            <span>+258 843 002 041 / 863 068 168</span>
+          </div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2" style="margin-top:2px; flex-shrink:0;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+            <span class="mono">vendas@logpro.co.mz</span>
+          </div>
+        </div>
+
+        <a class="whatsapp-btn" id="waContactBtn" href="https://wa.me/258843002041" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#0B3D1F"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.63 1.44 5.16L2 22l5.09-1.53a9.87 9.87 0 0 0 4.95 1.33c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.02a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.02.9.91-2.94-.19-.31a8.08 8.08 0 0 1-1.24-4.36c0-4.48 3.65-8.13 8.13-8.13s8.13 3.65 8.13 8.13-3.65 8.01-8.29 8.01zm4.44-6.07c-.24-.12-1.43-.7-1.65-.78-.22-.08-.39-.12-.55.12-.16.24-.63.78-.78.94-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+          <span data-i18n="whatsappBtn">Falar por WhatsApp</span>
+        </a>
+
+        <div class="map-block">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A8676" stroke-width="1.8"><path d="M9 3l6 3 6-3v15l-6 3-6-3-6 3V6z"/><path d="M9 3v15M15 6v15"/></svg>
+          <span class="mono" data-i18n="mapPlaceholder">mapa incorporado aqui</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-row">
+      <div>
+        <div class="footer-title disp" data-i18n="footerThanks">Obrigado.</div>
+        <div class="footer-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M12 22s8-7.2 8-13a8 8 0 1 0-16 0c0 5.8 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Av. Patrice Lumumba, Bairro Central nº 376, Maputo
+        </div>
+        <div class="footer-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M12 22s8-7.2 8-13a8 8 0 1 0-16 0c0 5.8 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span data-i18n="branchLabel">Sucursal:</span> Vilankulo — Business Center
+        </div>
+        <div class="footer-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A97C3D" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+          +258 843 002 041 / 863 068 168
+        </div>
+        <div class="footer-line mono">vendas@logpro.co.mz</div>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h5 class="mono" data-i18n="footerNavHeading">NAVEGAÇÃO</h5>
+          <a href="#sobre" data-i18n="navSobre">Sobre</a>
+          <a href="#produtos" data-i18n="navProdutos">Produtos</a>
+          <a href="#processo" data-i18n="navServicos">Serviços</a>
+          <a href="#marcas" data-i18n="navMarcas">Marcas</a>
+          <a href="#qualidade" data-i18n="footerQualityLink">Qualidade &amp; HSE</a>
+        </div>
+        <div class="footer-col">
+          <h5 class="mono" data-i18n="footerCatHeading">CATEGORIAS</h5>
+          <a href="#produtos" data-cat-link="instrumentacao" data-i18n="chipInstrumentation">Instrumentação</a>
+          <a href="#produtos" data-cat-link="solar" data-i18n="footerCatSolar">Sistemas solares</a>
+          <a href="#produtos" data-cat-link="seguranca" data-i18n="footerCatSecurity">Segurança electrónica</a>
+        </div>
+      </div>
+
+      <a href="#contacto" class="btn btn-brass" data-i18n="navCotacao">Solicitar cotação</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span><span data-i18n="footerCopyright">©</span> <span id="year"></span> Logpro Projects Lda. <span data-i18n="footerRights">Todos os direitos reservados.</span></span>
+      <span data-i18n="footerProtoNote">Website protótipo — conteúdo de demonstração.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" id="waFloatBtn" href="https://wa.me/258843002041" target="_blank" rel="noopener" data-i18n-aria-label="whatsappBtn" aria-label="Falar por WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="#0B3D1F"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.63 1.44 5.16L2 22l5.09-1.53a9.87 9.87 0 0 0 4.95 1.33c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.02a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.02.9.91-2.94-.19-.31a8.08 8.08 0 0 1-1.24-4.36c0-4.48 3.65-8.13 8.13-8.13s8.13 3.65 8.13 8.13-3.65 8.01-8.29 8.01zm4.44-6.07c-.24-.12-1.43-.7-1.65-.78-.22-.08-.39-.12-.55.12-.16.24-.63.78-.78.94-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+</a>
+<button class="back-to-top" id="backToTop" data-i18n-aria-label="backToTopAria" aria-label="Voltar ao topo">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+/* ================= I18N: TRANSLATIONS ================= */
+var translations = {
+  pt: {
+    pageTitle: "Logpro Projects | Logística e Procurement Industrial em Moçambique",
+    metaDescription: "Engenharia e aprovisionamento industrial em Moçambique: instrumentação, válvulas e bombas, sistemas solares e segurança electrónica. Marcas internacionais, engenharia local, do fornecimento à manutenção.",
+    metaOgTitle: "Logpro Projects | Logística e Procurement Industrial",
+    metaOgDescription: "Instrumentação, válvulas e bombas, energia solar e segurança electrónica — engenharia e aprovisionamento para os projectos industriais mais exigentes de Moçambique.",
+    metaOgLocale: "pt_MZ",
+    skipLink: "Saltar para o conteúdo",
+    protoBannerStrong: "Protótipo de website",
+    protoBannerText: "— conteúdo e estatísticas de exemplo para fins de demonstração. Substituir por dados reais antes do lançamento.",
+    navToggleAria: "Abrir menu",
+    navSobre: "Sobre",
+    navAreas: "Áreas de actuação",
+    navProdutos: "Produtos",
+    navServicos: "Serviços",
+    navMarcas: "Marcas",
+    navQualidade: "Qualidade & HSE",
+    navCotacao: "Pedir cotação",
+    areasEyebrow: "O QUE FAZEMOS",
+    areasTitle: "Áreas de actuação",
+    areasSub: "Duas frentes complementares: aprovisionamento contínuo e execução de projectos, adaptadas à dimensão e ao sector de cada cliente.",
+    areasProcTitle: "Procurement",
+    areasProc1: "Aquisição de material industrial",
+    areasProc2: "Fornecimento de equipamentos",
+    areasProc3: "Logística e entregas",
+    areasProc4: "Procurement hospitalar",
+    areasProc5: "Procurement hoteleiro",
+    areasProc6: "Procurement de pequena dimensão",
+    areasProjTitle: "Projects",
+    areasProj1: "Desenhadores",
+    areasProj2: "Registo e autorizações",
+    areasProj3: "Consultoria",
+    areasProj4: "Prestação de serviços",
+    branchLabel: "Sucursal:",
+    heroEyebrow: "LOGÍSTICA E PROCUREMENT INDUSTRIAL",
+    heroTitle: "Engenharia e aprovisionamento para os projectos industriais mais exigentes de Moçambique.",
+    heroText: "Instrumentação, energia solar, segurança electrónica e sistemas de controlo — com marcas internacionais e engenharia local, do fornecimento à manutenção.",
+    heroBtnProdutos: "Ver produtos",
+    heroBtnEngenharia: "Falar com engenharia",
+    sectorOilGas: "Óleo e gás",
+    sectorMining: "Mineração",
+    sectorEnergy: "Energia",
+    sectorConstruction: "Construção industrial",
+    sectorOther: "Outro",
+    statsAria: "Números indicativos (protótipo)",
+    statBrands: "MARCAS REPRESENTADAS",
+    statAreas: "ÁREAS DE ENGENHARIA",
+    statSectors: "SECTORES SERVIDOS",
+    statSupport: "SUPORTE TÉCNICO",
+    aboutEyebrow: "SOBRE NÓS",
+    missionTitle: "Missão",
+    missionText: "Oferta personalizada de produtos e serviços, reduzindo perdas e elevando a sustentabilidade dos nossos clientes.",
+    visionTitle: "Visão",
+    visionText: "Excelência em engenharia e inovação, entregando uma experiência acima das expectativas do cliente.",
+    valuesTitle: "Valores",
+    valuesText: "Integridade, honestidade, responsabilidade e centralidade no cliente em cada projecto.",
+    processEyebrow: "COMO TRABALHAMOS",
+    processTitle: "Do fornecimento à manutenção",
+    processSub: "Um único parceiro para todo o ciclo de vida do equipamento — da especificação técnica ao suporte pós-venda.",
+    process1Title: "Diagnóstico e especificação",
+    process1Text: "Levantamento técnico da necessidade e recomendação da solução mais adequada ao processo do cliente.",
+    process2Title: "Aprovisionamento",
+    process2Text: "Importação e logística junto de marcas internacionais de referência, com garantia de origem.",
+    process3Title: "Instalação e comissionamento",
+    process3Text: "Montagem em obra, testes de aceitação e colocação em funcionamento com a equipa de engenharia.",
+    process4Title: "Suporte contínuo",
+    process4Text: "Manutenção preventiva, peças de reposição e assistência técnica ao longo da vida do equipamento.",
+    catalogEyebrow: "CATÁLOGO",
+    catalogTitle: "Produtos e soluções",
+    catalogSub: "Equipamento industrial certificado, das marcas de referência mundial, com engenharia de aplicação local.",
+    chipAll: "Todos",
+    chipInstrumentation: "Instrumentação",
+    chipValves: "Válvulas",
+    chipPumps: "Bombas",
+    chipSolar: "Solar",
+    chipSecurity: "Segurança",
+    chipCommunication: "Comunicação",
+    chipMining: "Mineração",
+    catInstrumentacao: "INSTRUMENTAÇÃO",
+    catValvulas: "VÁLVULAS",
+    catBombas: "BOMBAS",
+    catSolar: "SOLAR",
+    catSeguranca: "SEGURANÇA",
+    catComunicacao: "COMUNICAÇÃO",
+    catMineracao: "MINERAÇÃO",
+    photoSoon: "foto real do produto brevemente",
+    ctaLink: "Pedir cotação →",
+    p1Alt: "Regulador e manómetro de pressão industrial",
+    p1Title: "Transmissor de pressão",
+    p2Alt: "Válvula gate industrial de vedação por pressão",
+    p2Title: "Gate valve industrial",
+    p2Brand: "Vedação por pressão · Aço",
+    p3Title: "Bomba centrífuga",
+    p3Brand: "Motor trifásico",
+    p4Alt: "Instalação comercial de painéis solares fotovoltaicos",
+    p4Title: "Sistema fotovoltaico",
+    p4Brand: "Painéis + MPPT + inversor",
+    p5Alt: "Instalação de painéis solares em telhado",
+    p5Title: "Controlador MPPT",
+    p6Alt: "Câmaras de videovigilância industrial CCTV",
+    p6Title: "Sistema CCTV",
+    p6Brand: "Monitorização de processo",
+    p7Title: "Detector de gás",
+    p8Title: "Switch industrial",
+    p8Brand: "Hirschmann · 8 portas",
+    p9Alt: "Camião industrial de mineração de grande porte",
+    p9Title: "Equipamento e comunicação para mina",
+    p9Brand: "Rádios · Sensores · Automação",
+    emptyState: "Sem produtos nesta categoria de momento — contacte-nos, a nossa rede de fornecedores é mais ampla do que este catálogo.",
+    brandsEyebrow: "MARCAS REPRESENTADAS",
+    whyEyebrow: "PORQUÊ A LOGPRO",
+    whyTitle: "Um parceiro técnico, não apenas um fornecedor",
+    whySub: "A diferença está na engenharia de aplicação: ajudamos a escolher, instalar e manter o equipamento certo.",
+    why1Title: "Marcas com garantia de origem",
+    why1Text: "Representação directa e canais autorizados, sem intermediários que comprometam a garantia.",
+    why2Title: "Resposta técnica rápida",
+    why2Text: "Equipa de engenharia disponível para especificação, dúvidas técnicas e emergências de operação.",
+    why3Title: "Cobertura sectorial ampla",
+    why3Text: "Óleo e gás, mineração, energia e construção industrial — cada sector com as suas exigências próprias.",
+    why4Title: "Acompanhamento pós-venda",
+    why4Text: "Manutenção preventiva e peças de reposição para maximizar o tempo de operação do equipamento.",
+    qualityEyebrow: "QUALIDADE & HSE",
+    qualityTitle: "Qualidade, HSE & Conformidade",
+    qualityIntro: "A LogPro está plenamente comprometida com os mais elevados padrões de Qualidade, Saúde, Segurança e Ambiente (HSE) e Conformidade em todas as actividades. Reconhecemos que o fornecimento responsável e a prestação de serviços exigem cumprimento rigoroso das melhores práticas internacionais, requisitos legais e princípios éticos de negócio. A nossa abordagem garante rastreabilidade e melhoria contínua em toda a cadeia de abastecimento.",
+    quality1Title: "Qualidade",
+    quality1Text: "Todos os produtos cumprem especificações técnicas definidas e padrões da indústria.",
+    quality2Title: "Saúde & Segurança",
+    quality2Text: "Prioridade máxima em cada projecto, desde o manuseamento até à entrega final.",
+    quality3Title: "Ambiente",
+    quality3Text: "Responsabilidade ambiental integrada em todos os nossos processos operacionais.",
+    quality4Title: "Conformidade",
+    quality4Text: "Transparência total, cumprindo regulamentos locais e requisitos de comércio internacional.",
+    overviewEyebrow: "VISÃO GERAL — EXPERTISE EM PROCUREMENT",
+    overviewText: "A LogPro Projects Lda é uma empresa de soluções de procurement e cadeia de abastecimento comprometida com serviços estratégicos, fiáveis e eficientes em termos de custo. Com foco na eficiência operacional e transparência, apoiamos organizações na aquisição dos produtos e serviços certos, no momento certo, pelo melhor valor. A nossa expertise abrange gestão de fornecedores, coordenação logística, negociação de contratos e processos de procurement de ponta a ponta.",
+    faqEyebrow: "PERGUNTAS FREQUENTES",
+    faqTitle: "Dúvidas comuns",
+    faq1Q: "Que sectores a Logpro Projects atende?",
+    faq1A: "Trabalhamos principalmente com óleo e gás, mineração, energia e construção industrial, adaptando cada proposta às normas e exigências do sector do cliente.",
+    faq2Q: "Como funciona o processo de cotação?",
+    faq2A: "Após o pedido através do formulário ou WhatsApp, a equipa de engenharia analisa a especificação e envia uma proposta técnica e comercial, normalmente em 1 a 3 dias úteis.",
+    faq3Q: "Fazem instalação e manutenção, ou apenas fornecimento?",
+    faq3A: "Cobrimos todo o ciclo: diagnóstico, aprovisionamento, instalação, comissionamento e suporte técnico contínuo após a entrega.",
+    faq4Q: "Trabalham com equipamento fora do catálogo apresentado?",
+    faq4A: "Sim. O catálogo mostra uma amostra representativa — a nossa rede de marcas e fornecedores é mais ampla; entre em contacto com a especificação do seu projecto.",
+    contactEyebrow: "CONTACTO",
+    contactTitle: "Solicite uma cotação",
+    contactSub: "A nossa equipa de engenharia responde com especificação técnica e proposta comercial.",
+    labelName: "Nome completo",
+    phName: "Nome e apelido",
+    labelCompany: "Empresa",
+    phCompany: "Nome da empresa",
+    labelSector: "Sector",
+    labelEmail: "E-mail",
+    labelPhone: "Telefone / WhatsApp",
+    labelInterest: "Produto ou serviço de interesse",
+    intInstrumentation: "Instrumentação",
+    intValvesPumps: "Válvulas e bombas",
+    intSolar: "Sistemas solares",
+    intSecurity: "Segurança electrónica",
+    intCommunication: "Comunicação industrial",
+    intEngineering: "Engenharia e aprovisionamento",
+    labelMessage: "Mensagem",
+    phMessage: "Descreva o equipamento ou projecto",
+    submitBtn: "Enviar pedido",
+    formSuccessMsg: "Pedido validado. Em breve a nossa equipa de engenharia entrará em contacto.",
+    formSetupNote: "Configuração pendente: substitua \"YOUR_FORM_ID\" no atributo action do formulário pelo ID do seu formulário Formspree para activar o envio real de e-mails.",
+    formErrorMsg: "Não foi possível enviar o pedido. Tente novamente ou contacte-nos por WhatsApp.",
+    whatsappBtn: "Falar por WhatsApp",
+    whatsappMessage: "Saudações, Logpro Projects. Visitei o vosso website e gostaria de obter mais informações sobre os vossos produtos e serviços. Aguardo o vosso contacto, obrigado.",
+    mapPlaceholder: "mapa incorporado aqui",
+    footerThanks: "Obrigado.",
+    footerNavHeading: "NAVEGAÇÃO",
+    footerQualityLink: "Qualidade & HSE",
+    footerCatHeading: "CATEGORIAS",
+    footerCatSolar: "Sistemas solares",
+    footerCatSecurity: "Segurança electrónica",
+    footerCopyright: "©",
+    footerRights: "Todos os direitos reservados.",
+    footerProtoNote: "Website protótipo — conteúdo de demonstração.",
+    backToTopAria: "Voltar ao topo"
+  },
+  en: {
+    pageTitle: "Logpro Projects | Industrial Logistics & Procurement in Mozambique",
+    metaDescription: "Industrial engineering and procurement in Mozambique: instrumentation, valves and pumps, solar systems and electronic security. International brands, local engineering, from supply to maintenance.",
+    metaOgTitle: "Logpro Projects | Industrial Logistics & Procurement",
+    metaOgDescription: "Instrumentation, valves and pumps, solar power and electronic security — engineering and procurement for Mozambique's most demanding industrial projects.",
+    metaOgLocale: "en_MZ",
+    skipLink: "Skip to content",
+    protoBannerStrong: "Website prototype",
+    protoBannerText: "— sample content and statistics for demonstration purposes. Replace with real data before launch.",
+    navToggleAria: "Open menu",
+    navSobre: "About",
+    navAreas: "Areas of operation",
+    navProdutos: "Products",
+    navServicos: "Services",
+    areasEyebrow: "WHAT WE DO",
+    areasTitle: "Areas of operation",
+    areasSub: "Two complementary lines of work: ongoing procurement and project execution, tailored to each client's size and sector.",
+    areasProcTitle: "Procurement",
+    areasProc1: "Industrial material acquisition",
+    areasProc2: "Equipment supply",
+    areasProc3: "Logistics and deliveries",
+    areasProc4: "Hospital procurement",
+    areasProc5: "Hospitality procurement",
+    areasProc6: "Small-scale procurement",
+    areasProjTitle: "Projects",
+    areasProj1: "Designers",
+    areasProj2: "Registration and permits",
+    areasProj3: "Consulting",
+    areasProj4: "Service delivery",
+    branchLabel: "Branch:",
+    navMarcas: "Brands",
+    navQualidade: "Quality & HSE",
+    navCotacao: "Request quote",
+    heroEyebrow: "INDUSTRIAL LOGISTICS & PROCUREMENT",
+    heroTitle: "Engineering and procurement for Mozambique's most demanding industrial projects.",
+    heroText: "Instrumentation, solar power, electronic security and control systems — with international brands and local engineering, from supply to maintenance.",
+    heroBtnProdutos: "View products",
+    heroBtnEngenharia: "Talk to engineering",
+    sectorOilGas: "Oil & gas",
+    sectorMining: "Mining",
+    sectorEnergy: "Energy",
+    sectorConstruction: "Industrial construction",
+    sectorOther: "Other",
+    statsAria: "Indicative figures (prototype)",
+    statBrands: "BRANDS REPRESENTED",
+    statAreas: "ENGINEERING AREAS",
+    statSectors: "SECTORS SERVED",
+    statSupport: "TECHNICAL SUPPORT",
+    aboutEyebrow: "ABOUT US",
+    missionTitle: "Mission",
+    missionText: "Tailored offering of products and services, reducing losses and raising our clients' sustainability.",
+    visionTitle: "Vision",
+    visionText: "Excellence in engineering and innovation, delivering an experience beyond client expectations.",
+    valuesTitle: "Values",
+    valuesText: "Integrity, honesty, responsibility and a client-centred approach in every project.",
+    processEyebrow: "HOW WE WORK",
+    processTitle: "From supply to maintenance",
+    processSub: "A single partner for the equipment's entire life cycle — from technical specification to after-sales support.",
+    process1Title: "Diagnosis and specification",
+    process1Text: "Technical assessment of the need and recommendation of the solution best suited to the client's process.",
+    process2Title: "Procurement",
+    process2Text: "Import and logistics with leading international brands, with guaranteed origin.",
+    process3Title: "Installation and commissioning",
+    process3Text: "On-site assembly, acceptance testing and commissioning with the engineering team.",
+    process4Title: "Ongoing support",
+    process4Text: "Preventive maintenance, spare parts and technical assistance throughout the equipment's lifetime.",
+    catalogEyebrow: "CATALOGUE",
+    catalogTitle: "Products and solutions",
+    catalogSub: "Certified industrial equipment, from world-leading brands, with local application engineering.",
+    chipAll: "All",
+    chipInstrumentation: "Instrumentation",
+    chipValves: "Valves",
+    chipPumps: "Pumps",
+    chipSolar: "Solar",
+    chipSecurity: "Security",
+    chipCommunication: "Communication",
+    chipMining: "Mining",
+    catInstrumentacao: "INSTRUMENTATION",
+    catValvulas: "VALVES",
+    catBombas: "PUMPS",
+    catSolar: "SOLAR",
+    catSeguranca: "SECURITY",
+    catComunicacao: "COMMUNICATION",
+    catMineracao: "MINING",
+    photoSoon: "real product photo coming soon",
+    ctaLink: "Request quote →",
+    p1Alt: "Industrial pressure regulator and gauge",
+    p1Title: "Pressure transmitter",
+    p2Alt: "Industrial pressure-seal gate valve",
+    p2Title: "Industrial gate valve",
+    p2Brand: "Pressure seal · Steel",
+    p3Title: "Centrifugal pump",
+    p3Brand: "Three-phase motor",
+    p4Alt: "Commercial photovoltaic solar panel installation",
+    p4Title: "Photovoltaic system",
+    p4Brand: "Panels + MPPT + inverter",
+    p5Alt: "Rooftop solar panel installation",
+    p5Title: "MPPT controller",
+    p6Alt: "Industrial CCTV surveillance cameras",
+    p6Title: "CCTV system",
+    p6Brand: "Process monitoring",
+    p7Title: "Gas detector",
+    p8Title: "Industrial switch",
+    p8Brand: "Hirschmann · 8 ports",
+    p9Alt: "Large industrial mining truck",
+    p9Title: "Mine equipment and communication",
+    p9Brand: "Radios · Sensors · Automation",
+    emptyState: "No products in this category right now — contact us, our supplier network is broader than this catalogue.",
+    brandsEyebrow: "BRANDS REPRESENTED",
+    whyEyebrow: "WHY LOGPRO",
+    whyTitle: "A technical partner, not just a supplier",
+    whySub: "The difference lies in application engineering: we help you choose, install and maintain the right equipment.",
+    why1Title: "Brands with guaranteed origin",
+    why1Text: "Direct representation and authorised channels, with no intermediaries that could compromise the warranty.",
+    why2Title: "Fast technical response",
+    why2Text: "Engineering team available for specification, technical queries and operational emergencies.",
+    why3Title: "Broad sector coverage",
+    why3Text: "Oil and gas, mining, energy and industrial construction — each sector with its own specific requirements.",
+    why4Title: "After-sales follow-up",
+    why4Text: "Preventive maintenance and spare parts to maximise equipment uptime.",
+    qualityEyebrow: "QUALITY & HSE",
+    qualityTitle: "Quality, HSE & Compliance",
+    qualityIntro: "LogPro is fully committed to the highest standards of Quality, Health, Safety and Environment (HSE) and Compliance across all activities. We recognise that responsible sourcing and service delivery require strict adherence to international best practice, legal requirements and ethical business principles. Our approach ensures traceability and continuous improvement across the supply chain.",
+    quality1Title: "Quality",
+    quality1Text: "All products meet defined technical specifications and industry standards.",
+    quality2Title: "Health & Safety",
+    quality2Text: "Top priority in every project, from handling through to final delivery.",
+    quality3Title: "Environment",
+    quality3Text: "Environmental responsibility built into all our operational processes.",
+    quality4Title: "Compliance",
+    quality4Text: "Full transparency, meeting local regulations and international trade requirements.",
+    overviewEyebrow: "OVERVIEW — PROCUREMENT EXPERTISE",
+    overviewText: "LogPro Projects Lda is a procurement and supply chain solutions company committed to strategic, reliable and cost-effective services. Focused on operational efficiency and transparency, we help organisations acquire the right products and services, at the right time, for the best value. Our expertise spans supplier management, logistics coordination, contract negotiation and end-to-end procurement processes.",
+    faqEyebrow: "FREQUENTLY ASKED QUESTIONS",
+    faqTitle: "Common questions",
+    faq1Q: "Which sectors does Logpro Projects serve?",
+    faq1A: "We work mainly with oil and gas, mining, energy and industrial construction, tailoring each proposal to the client's sector standards and requirements.",
+    faq2Q: "How does the quotation process work?",
+    faq2A: "After a request via the form or WhatsApp, the engineering team reviews the specification and sends a technical and commercial proposal, usually within 1 to 3 business days.",
+    faq3Q: "Do you handle installation and maintenance, or supply only?",
+    faq3A: "We cover the full cycle: diagnosis, procurement, installation, commissioning and ongoing technical support after delivery.",
+    faq4Q: "Do you work with equipment outside the catalogue shown?",
+    faq4A: "Yes. The catalogue shows a representative sample — our network of brands and suppliers is broader; get in touch with your project specification.",
+    contactEyebrow: "CONTACT",
+    contactTitle: "Request a quote",
+    contactSub: "Our engineering team responds with technical specification and a commercial proposal.",
+    labelName: "Full name",
+    phName: "First and last name",
+    labelCompany: "Company",
+    phCompany: "Company name",
+    labelSector: "Sector",
+    labelEmail: "Email",
+    labelPhone: "Phone / WhatsApp",
+    labelInterest: "Product or service of interest",
+    intInstrumentation: "Instrumentation",
+    intValvesPumps: "Valves and pumps",
+    intSolar: "Solar systems",
+    intSecurity: "Electronic security",
+    intCommunication: "Industrial communication",
+    intEngineering: "Engineering and procurement",
+    labelMessage: "Message",
+    phMessage: "Describe the equipment or project",
+    submitBtn: "Send request",
+    formSuccessMsg: "Request validated. Our engineering team will be in touch shortly.",
+    formSetupNote: "Pending setup: replace \"YOUR_FORM_ID\" in the form's action attribute with your Formspree form ID to enable real email delivery.",
+    formErrorMsg: "We couldn't send your request. Please try again or contact us via WhatsApp.",
+    whatsappBtn: "Chat on WhatsApp",
+    whatsappMessage: "Hello, Logpro Projects. I visited your website and would like to get more information about your products and services. Looking forward to hearing from you, thank you.",
+    mapPlaceholder: "map embedded here",
+    footerThanks: "Thank you.",
+    footerNavHeading: "NAVIGATION",
+    footerQualityLink: "Quality & HSE",
+    footerCatHeading: "CATEGORIES",
+    footerCatSolar: "Solar systems",
+    footerCatSecurity: "Electronic security",
+    footerCopyright: "©",
+    footerRights: "All rights reserved.",
+    footerProtoNote: "Prototype website — demonstration content.",
+    backToTopAria: "Back to top"
+  }
+};
+
+/* ================= I18N: APPLY LANGUAGE ================= */
+function applyLanguage(lang){
+  var dict = translations[lang] || translations.pt;
+
+  document.documentElement.lang = (lang === 'en') ? 'en' : 'pt-MZ';
+
+  if(document.getElementById('pageTitle')) document.getElementById('pageTitle').textContent = dict.pageTitle;
+  if(document.getElementById('metaDescription')) document.getElementById('metaDescription').setAttribute('content', dict.metaDescription);
+  if(document.getElementById('metaOgTitle')) document.getElementById('metaOgTitle').setAttribute('content', dict.metaOgTitle);
+  if(document.getElementById('metaOgDescription')) document.getElementById('metaOgDescription').setAttribute('content', dict.metaOgDescription);
+  if(document.getElementById('metaOgLocale')) document.getElementById('metaOgLocale').setAttribute('content', dict.metaOgLocale);
+
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var key = el.getAttribute('data-i18n');
+    if(dict[key] !== undefined) el.textContent = dict[key];
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+    var key = el.getAttribute('data-i18n-placeholder');
+    if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+  });
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(function(el){
+    var key = el.getAttribute('data-i18n-aria-label');
+    if(dict[key] !== undefined) el.setAttribute('aria-label', dict[key]);
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach(function(el){
+    var key = el.getAttribute('data-i18n-alt');
+    if(dict[key] !== undefined) el.setAttribute('alt', dict[key]);
+  });
+
+  document.getElementById('langPt').classList.toggle('active', lang === 'pt');
+  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+  document.getElementById('langPt').setAttribute('aria-pressed', lang === 'pt');
+  document.getElementById('langEn').setAttribute('aria-pressed', lang === 'en');
+
+  var waText = encodeURIComponent(dict.whatsappMessage);
+  var waContactBtn = document.getElementById('waContactBtn');
+  var waFloatBtn = document.getElementById('waFloatBtn');
+  if(waContactBtn) waContactBtn.href = 'https://wa.me/258843002041?text=' + waText;
+  if(waFloatBtn) waFloatBtn.href = 'https://wa.me/258843002041?text=' + waText;
+
+  try { localStorage.setItem('logpro-lang', lang); } catch(e){}
+}
+
+(function initLanguage(){
+  var saved = null;
+  try { saved = localStorage.getItem('logpro-lang'); } catch(e){}
+  var initialLang = saved || (navigator.language && navigator.language.toLowerCase().indexOf('en') === 0 ? 'en' : 'pt');
+  applyLanguage(initialLang);
+
+  document.getElementById('langPt').addEventListener('click', function(){ applyLanguage('pt'); });
+  document.getElementById('langEn').addEventListener('click', function(){ applyLanguage('en'); });
+})();
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* Mobile nav toggle */
+var navToggle = document.getElementById('navToggle');
+var mainNav = document.getElementById('mainNav');
+navToggle.addEventListener('click', function(){
+  var isOpen = mainNav.classList.toggle('open');
+  navToggle.classList.toggle('open', isOpen);
+  navToggle.setAttribute('aria-expanded', isOpen);
+});
+document.querySelectorAll('#mainNav a').forEach(function(a){
+  a.addEventListener('click', function(){
+    mainNav.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+/* Scroll-spy: highlight active nav link */
+var navLinks = document.querySelectorAll('[data-nav]');
+var spySections = ['sobre','areas','produtos','processo','marcas','qualidade','contacto'].map(function(id){ return document.getElementById(id); }).filter(Boolean);
+var spyObserver = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){
+      var id = entry.target.getAttribute('id');
+      navLinks.forEach(function(a){
+        a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+      });
+    }
+  });
+}, { rootMargin: '-40% 0px -50% 0px' });
+spySections.forEach(function(s){ spyObserver.observe(s); });
+
+/* Product filter chips */
+var chips = document.getElementById('chips');
+var grid = document.getElementById('grid');
+var emptyState = document.getElementById('emptyState');
+
+function filterProducts(cat){
+  document.querySelectorAll('.chip').forEach(function(c){
+    c.classList.toggle('active', c.getAttribute('data-cat') === cat);
+  });
+  var visibleCount = 0;
+  document.querySelectorAll('.pcard').forEach(function(card){
+    var match = (cat === 'todos' || card.getAttribute('data-cat') === cat);
+    card.style.display = match ? '' : 'none';
+    if(match) visibleCount++;
+  });
+  emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+}
+
+chips.addEventListener('click', function(e){
+  var chip = e.target.closest('.chip');
+  if(!chip) return;
+  filterProducts(chip.getAttribute('data-cat'));
+});
+chips.addEventListener('keydown', function(e){
+  if(e.key !== 'Enter' && e.key !== ' ') return;
+  var chip = e.target.closest('.chip');
+  if(!chip) return;
+  e.preventDefault();
+  filterProducts(chip.getAttribute('data-cat'));
+});
+
+/* Footer category shortcuts jump to product section and filter */
+document.querySelectorAll('[data-cat-link]').forEach(function(a){
+  a.addEventListener('click', function(){
+    filterProducts(a.getAttribute('data-cat-link'));
+  });
+});
+
+/* Contact form: real submission via Formspree */
+var form = document.getElementById('quote-form');
+var formSuccess = document.getElementById('formSuccess');
+var formErrorBox = document.getElementById('formError');
+var submitBtnEl = document.getElementById('submitBtn');
+var formSetupNote = document.getElementById('formSetupNote');
+var FORM_NOT_CONFIGURED = form.getAttribute('action').indexOf('YOUR_FORM_ID') !== -1;
+/* Quando o ficheiro é aberto directamente (file://) o navegador bloqueia por CORS
+   qualquer pedido "fetch" para domínios externos. Nesse caso usamos o envio nativo
+   do formulário (navegação normal), que não sofre essa restrição e entrega o
+   e-mail na mesma. Quando o site estiver hospedado em http/https, usa-se o fetch
+   para mostrar as mensagens de sucesso/erro sem sair da página. */
+var USE_NATIVE_SUBMIT = window.location.protocol === 'file:';
+
+if(!FORM_NOT_CONFIGURED && formSetupNote){
+  formSetupNote.style.display = 'none';
+}
+
+form.addEventListener('submit', function(e){
+  formSuccess.classList.remove('show');
+  formErrorBox.style.display = 'none';
+
+  if(!form.checkValidity()){
+    e.preventDefault();
+    form.reportValidity();
+    return;
+  }
+
+  if(FORM_NOT_CONFIGURED){
+    e.preventDefault();
+    formErrorBox.style.display = 'flex';
+    formErrorBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    return;
+  }
+
+  if(USE_NATIVE_SUBMIT){
+    /* Não chama preventDefault: o navegador envia o formulário directamente
+       para o Formspree e mostra a página de confirmação deles. */
+    return;
+  }
+
+  e.preventDefault();
+  var originalBtnText = submitBtnEl.textContent;
+  submitBtnEl.disabled = true;
+  submitBtnEl.style.opacity = '.6';
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(function(response){
+    if(response.ok){
+      form.reset();
+      formSuccess.classList.add('show');
+      formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+      return response.json().then(function(data){
+        throw new Error((data && data.errors) ? data.errors.map(function(er){ return er.message; }).join(', ') : 'submission_failed');
+      });
+    }
+  }).catch(function(err){
+    console.error('Erro ao enviar formulário:', err);
+    formErrorBox.style.display = 'flex';
+    formErrorBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }).finally(function(){
+    submitBtnEl.disabled = false;
+    submitBtnEl.style.opacity = '';
+    submitBtnEl.textContent = originalBtnText;
+  });
+});
+
+/* Back to top button */
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function(){
+  backToTop.classList.toggle('show', window.scrollY > 500);
+});
+backToTop.addEventListener('click', function(){
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+</body>
+</html>
